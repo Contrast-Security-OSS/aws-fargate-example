@@ -113,6 +113,10 @@ To expose a sample SQL Injection vulnerability:
 *  Enter the following string where the screen prompts 'Enter you last name':
 
 `Smith`
+ 
+The result will be:
+
+![Webgoat vulnerability UI App](/diagrams/webgoat-ui-smith.png)
 
 Once the search functionality is exploited, the vulnerable component notifies the Contrast Security Agent of the vulnerability.
 
