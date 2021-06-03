@@ -74,7 +74,7 @@ For more information on how to set up AWS Fargate prior to deployment of your ap
 
 `kubectl create secret generic contrast-security --from-file=./contrast_security.yaml`
 
-*Note - You need to be in the same directory that contains the 'contrast_security.yaml' file, unless you explicitly pass the file location to kubectl as above.*
+*Note - You need to be in the same directory that contains the 'contrast_security.yaml' file, unless you explicitly pass the file location to kubectl as above.  Make sure the namespace and/or label(s) match the AWS Fargate Profile created above.*
 
 ### Deploy Webgoat to an EKS cluster via AWS Fargate
 
