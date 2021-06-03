@@ -109,14 +109,17 @@ To expose a sample SQL Injection vulnerability:
   `<IP ADDRESS>/WebGoat`
  
   *  credentials - email: webgoat, password: webgoat
-*  <ADD>
+*  Navigate to 'Injection Flaws' >> 'String SQL Injection' on the left hand menu
+*  Enter the following string where the screen prompts 'Enter you last name':
 
-`<ADD>`
+`Smith`
 
-Once the search functionality is exploited, the following results should come back from the database.
+Once the search functionality is exploited, the vulnerable component notifies the Contrast Security Agent of the vulnerability.
 
 ## Contrast Security Vulnerability Results
 
 Results from the Contrast Agent should resemble the following: 
+ 
+![Webgoat vulnerability Contrast Team Server](/diagrams/webgoat-vulnerabilities-ss.png)
 
 *Note - More information on Contrast Security can be found [here](www.contrastsecurity.com)*
