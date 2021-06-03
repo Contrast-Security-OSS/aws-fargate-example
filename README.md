@@ -48,9 +48,7 @@ Following your build, in order to run the application via Amazon EKS, you first 
 
 3.) Log into Amazon's ECR using the output from the previous step - more information found [here](https://aws.amazon.com/blogs/compute/authenticating-amazon-ecr-repositories-for-docker-cli-with-credential-helper/#:~:text=Overview%20of%20Amazon%20ECS%20and%20Amazon%20ECR&text=ECR%20is%20a%20private%20Docker,%2C%20pull%2C%20and%20manage%20images.):
 
-`docker login <ADD>`
-
-3.) Push a local container image to Amazon's ECR using the 'docker' command:
+4.) Push a local container image to Amazon's ECR using the 'docker' command:
 
 `docker push NAME[:TAG]`
 
@@ -61,7 +59,9 @@ The Webgoat application can also be deployed to a Kubernetes cluster as tested o
 ### Set Up AWS Fargate prior to deployment
 
 1.) Make sure existing EKS cluster nodes can communicate with Fargate Pods
+
 2.) Create AWS Fargate pod execution role
+
 3.) Create AWS Fargate Profile that matches your kubernetes namespace and kubernetes labels
 
 For more information on how to set up AWS Fargate prior to deployment of your applications to an EKS cluster, please refer to [this](https://docs.amazonaws.cn/en_us/eks/latest/userguide/fargate-getting-started.html) tutorial.
