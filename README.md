@@ -54,7 +54,7 @@ Following your build, in order to run the application via Amazon EKS, you first 
 
 The Webgoat application can also be deployed to a Kubernetes cluster as tested on local OSX via Kubernetes running locally on Docker Desktop and the Amazon EKS PaaS environment. 
  
-### Set Up AWS Fargate
+### Set Up AWS Fargate prior to deployment
 
 1.) Make sure existing EKS cluster nodes can communicate with Fargate Pods
 2.) Create AWS Fargate pod execution role
