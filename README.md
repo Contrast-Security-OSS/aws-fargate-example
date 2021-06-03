@@ -56,9 +56,11 @@ The Webgoat application can also be deployed to a Kubernetes cluster as tested o
  
 ### Set Up AWS Fargate
 
-#### Make sure existing EKS cluster nodes can communicate with Fargate Pods
+1.) Make sure existing EKS cluster nodes can communicate with Fargate Pods
+2.) Create AWS Fargate pod execution role
+3.) Create AWS Fargate Profile that matches your kubernetes namespace and kubernetes labels
 
-For more information, please refer to [this](https://docs.amazonaws.cn/en_us/eks/latest/userguide/fargate-getting-started.html) tutorial.
+For more information on how to set up AWS Fargate prior to deployment of your applications to an EKS cluster, please refer to [this](https://docs.amazonaws.cn/en_us/eks/latest/userguide/fargate-getting-started.html) tutorial.
 
 ### Create a kubernetes secret to store Contrast Agent configurations
 
