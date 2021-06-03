@@ -70,7 +70,7 @@ Using eksctl:
 
 `eksctl create fargateprofile --cluster <cluster_name> --name <fargate_profile_name> --namespace <kubernetes_namespace> --labels <key=value>`
 
-For information on how to create a fargate profile using the AWS Management Console, please refer to the link at the bottom of this section.
+If you would like to use the AWS Management Console, refer to this [link](https://docs.amazonaws.cn/en_us/eks/latest/userguide/fargate-profile.html#create-fargate-profile).
 
 For more information on how to set up AWS Fargate prior to deployment of your applications to an EKS cluster, please refer to [this](https://docs.amazonaws.cn/en_us/eks/latest/userguide/fargate-getting-started.html) tutorial.
 
