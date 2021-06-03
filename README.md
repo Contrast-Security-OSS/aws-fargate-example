@@ -26,13 +26,13 @@ You can run Webgoat within a Docker container locally via docker-compose as test
 
 1.) Build the container using:
 
-`docker build -f Dockerfile . -t <ADD>`
+`docker build -f Dockerfile . -t dockerwebgoat`
 
 2.) Run the containers locally via Docker-Compose using: 
 
 `docker-compose up`
 
-*Note - For vanilla Docker implementations including docker-compose, the agent configurations are passed via environment variables within the Dockerfile.  Make sure to use 'Dockerfile' for vanilla Docker implementations for the docker build.  If you are deploying to Amazon EKS, please use 'Dockerfile' for the docker build as the Contrast Agent configurations are removed from the Dockerfile.  For Amazon EKS implementations, Contrast Agent configurations are passed using kubernetes secrets/configMaps.* 
+*Note - For vanilla Docker implementations including docker-compose, the agent configurations are passed via environment variables within the Dockerfile.  Make sure to use 'Dockerfile-old' for vanilla Docker implementations for the docker build.  If you are deploying to Amazon EKS, please use 'Dockerfile' for the docker build as the Contrast Agent configurations are removed from the Dockerfile.  For Amazon EKS implementations, Contrast Agent configurations are passed using kubernetes secrets/configMaps.* 
 
 ## Pushing the Container Image to Amazon ECR
 
@@ -42,7 +42,11 @@ Following your build, in order to run the application via Amazon EKS, you first 
 
 `docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]`
 
-2.) Log into Amazon's ECR using the following command - more information found <ADD>:
+2.) Use the 'aws ecr get-login' command to generate the docker login command for the next step:
+
+`$ aws ecr get-login docker login –u AWS –p password –e none https://aws_account_id.dkr.ecr.us-east-1.amazonaws.com`
+
+3.) Log into Amazon's ECR using the output from the previous step - more information found [here](https://aws.amazon.com/blogs/compute/authenticating-amazon-ecr-repositories-for-docker-cli-with-credential-helper/#:~:text=Overview%20of%20Amazon%20ECS%20and%20Amazon%20ECR&text=ECR%20is%20a%20private%20Docker,%2C%20pull%2C%20and%20manage%20images.):
 
 `docker login <ADD>`
 
