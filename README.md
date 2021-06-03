@@ -103,7 +103,11 @@ For more information on how to set up AWS Fargate prior to deployment of your ap
 To expose a sample SQL Injection vulnerability:
 * login 
   *  inspect the loadbalancer service you have deployed to get the IP - add '/WebGoat' to the URL 
+ 
+ The result URL should be:
+ 
   `<IP ADDRESS>/WebGoat`
+ 
   *  credentials - email: webgoat, password: webgoat
 *  <ADD>
 
