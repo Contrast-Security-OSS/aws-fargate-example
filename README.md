@@ -6,6 +6,11 @@ The code in this github repository gives a step-by-step instruction on how to in
 
 This github repository contains the following sections:
 * Sample Application with Vulnerabilities - Webgoat
+* Docker Build/Docker-Compose Deployment
+* Pushing the Container Image to Amazon ECR
+* Amazon EKS Deployment via AWS Fargate
+* Simple Exploit (SQL Injection)
+* Contrast Security Vulnerability Results
 
 ## Sample Application with Vulnerabilities - Webgoat
 
@@ -45,7 +50,7 @@ Following your build, in order to run the application via Amazon EKS, you first 
 
 `docker push NAME[:TAG]`
 
-## Kubernetes Deployment
+## Amazon EKS Deployment via AWS Fargate
 
 The Webgoat application can also be deployed to a Kubernetes cluster as tested on local OSX via Kubernetes running locally on Docker Desktop and the Amazon EKS PaaS environment. 
 
