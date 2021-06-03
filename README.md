@@ -14,11 +14,11 @@ This github repository contains the following sections:
 
 ## Sample Application with Vulnerabilities - Webgoat
 
-The sample application is based on !(OWASP WebGoat - version 7)[https://github.com/WebGoat] - vulnerabilities have been added for demonstration purposes.
+The sample application is based on (OWASP WebGoat - version 7)[https://github.com/WebGoat] - vulnerabilities have been added for demonstration purposes.
 
 The Webgoat application was developed on the java framework.  This guide assumes that the user has knowledge on how to instrument a java application with a Contrast Security Agent.  
 
-For more information on how to instrument a java application with a Contrast Security Agent, please visit the link !(here)[https://docs.contrastsecurity.com/en/install-the-java-agent.html].
+For more information on how to instrument a java application with a Contrast Security Agent, please visit the link (here)[https://docs.contrastsecurity.com/en/install-the-java-agent.html].
 
 ## Docker Build/Docker-Compose Deployment
 
