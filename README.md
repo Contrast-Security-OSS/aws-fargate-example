@@ -16,6 +16,8 @@ This github repository contains the following sections:
 
 The sample application is based on [OWASP WebGoat - version 7](https://github.com/WebGoat) - vulnerabilities have been added for demonstration purposes.
 
+![Contrast Fargate-EKS Integration Example](/diagrams/webggoat-post-landing.png)
+
 The Webgoat application was developed on the java framework.  This guide assumes that the user has knowledge on how to instrument a java application with a Contrast Security Agent.  
 
 For more information on how to instrument a java application with a Contrast Security Agent, please visit the link [here](https://docs.contrastsecurity.com/en/install-the-java-agent.html).
