@@ -64,7 +64,13 @@ The Webgoat application can also be deployed to a Kubernetes cluster as tested o
 
 2.) Create AWS Fargate pod execution role
 
-3.) Create AWS Fargate Profile that matches your kubernetes namespace and kubernetes labels
+3.) Create AWS Fargate Profile that matches your kubernetes namespace and kubernetes labels:
+
+Using eksctl:
+
+`eksctl create fargateprofile --cluster <cluster_name> --name <fargate_profile_name> --namespace <kubernetes_namespace> --labels <key=value>`
+
+For information on how to create a fargate profile using the AWS Management Console, please refer to the link at the bottom of this section.
 
 For more information on how to set up AWS Fargate prior to deployment of your applications to an EKS cluster, please refer to [this](https://docs.amazonaws.cn/en_us/eks/latest/userguide/fargate-getting-started.html) tutorial.
 
