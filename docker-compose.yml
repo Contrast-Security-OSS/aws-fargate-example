@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  webgoat:
+    build: .
+    environment:
+      - CONTRAST__API__API_KEY
+      - CONTRAST__API__SERVICE_KEY
+      - CONTRAST__API__USER_NAME
+      - CONTRAST__API__URL
+    ports:
+      - "8080:8080"
