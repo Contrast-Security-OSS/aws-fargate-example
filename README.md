@@ -76,6 +76,8 @@ For more information on how to set up AWS Fargate prior to deployment of your ap
 
 ### Create a kubernetes secret to store Contrast Agent configurations
 
+*Note - Prior to running kubectl commands, you need to make sure kubeclt can communicate with your EKS cluster.  For instructions on how to configure kubectl to your EKS cluster, refer to [this](https://docs.amazonaws.cn/en_us/eks/latest/userguide/create-kubeconfig.html) link.* 
+
 1.) Update the 'contrast_security.yaml' with your configuration details.
 
 2.) Create a kubernetes secret that houses the Contrast Security agent configuration from the 'contrast_security' file:
