@@ -1,5 +1,19 @@
+# Set agent configurations - optional HTTP proxy information if required found at CS site* 
 api: 
-  url: <CONTRAST TEAM SERVER URL>
-  api_key: <API KEY>
-  service_key: <SERVICE KEY>
-  user_name: <CONTRAST TEAM SERVER USERNAME>
+  url: <YOUR_CONTRAST_URL>
+  api_key: <YOUR_API_KEY>
+  service_key: <YOUR_SERVICE_KEY>
+  user_name: <agent_GUID@OrganizationName>
+
+# Set the name for this application
+agent:
+  java:
+    standalone_app_name: <YOUR APPLICATION NAME>
+
+# Enable Contrast Assess product - sample configuration
+inventory:
+  enable: true
+assess:
+  enable: true
+protect:
+  enable: true
