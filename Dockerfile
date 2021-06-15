@@ -13,4 +13,4 @@ RUN curl --max-time 20 $CONTRAST__BASEURL/agents/default/JAVA -H API-Key:$APIKey
 
 EXPOSE 8080
 
-CMD ["java","-javaagent:/opt/contrast/contrast.jar","-Dcontrast.standalone.appname=WebGoatDocker","-Dcontrast.protect.rules.sql-injection.detect_tautologies=true","-Dcontrast.server=WebGoatDockerServer","-jar","/opt/app/webgoat.jar"]
+CMD ["java","-javaagent:/opt/contrast/contrast.jar","-Dcontrast.protect.rules.sql-injection.detect_tautologies=true","-Dcontrast.server=$SERVER_NAME","-jar","/opt/app/webgoat.jar"]
