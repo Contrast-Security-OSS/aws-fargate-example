@@ -1,1 +1,5 @@
-.
+api: 
+  url: <CONTRAST TEAM SERVER URL>
+  api_key: <API KEY>
+  service_key: <SERVICE KEY>
+  user_name: <CONTRAST TEAM SERVER USERNAME>
