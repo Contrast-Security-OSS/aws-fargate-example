@@ -3,7 +3,7 @@ api:
   url: <YOUR_CONTRAST_URL>
   api_key: <YOUR_API_KEY>
   service_key: <YOUR_SERVICE_KEY>
-  user_name: <agent_GUID@OrganizationName>
+  user_name: <CONTRAST TEAM SERVER USERNAME>
 
 # Set the name for this application
 agent:
