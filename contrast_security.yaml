@@ -17,3 +17,10 @@ assess:
   enable: true
 protect:
   enable: true
+
+# The following environment variables are leveraged during the deployment of the Contrast Security agent and application
+env:
+  OrgID=<YOUR ORGANIZATION ID>
+  Auth=<YOUR AUTHORIZATION HEADER>
+  APIKey=<YOUR_API_KEY>
+  CONTRAST__BASEURL=<YOUR CONTRAST URL>/api/ng/$OrgID
