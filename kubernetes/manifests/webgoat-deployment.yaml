@@ -24,7 +24,7 @@ spec:
         io.kompose.service: webgoat
     spec:
       containers:
-        - image: webgoat
+        - image: <AWS ACCOUNT ID>.dkr.ecr.<AWS REGION>.amazonaws.com/<RESPOSITORY>:<TAG>
           name: webgoat
           ports:
             - containerPort: 8080
