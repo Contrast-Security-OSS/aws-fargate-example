@@ -10,7 +10,7 @@ metadata:
     #traefik.ingress.kubernetes.io/redirect-permanent: "true"
 spec:
   rules:
-  - host: netflicks.k8s.contrast.app
+  - host: webgoat.k8s.contrast.app
     http:
       paths:
       - path: /
