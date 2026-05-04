@@ -1,6 +1,6 @@
 # Dockerfile to run WebGoat 7.1 with Contrast Security
 
-FROM anapsix/alpine-java:jdk8
+FROM anapsix/alpine-java:jdk8@sha256:ef9353f0faca0597f0e53c5b6a2b9f4d9d028000c89545f3202175ee4cdbfa59
 
 RUN mkdir /opt/app
 RUN mkdir /opt/contrast
